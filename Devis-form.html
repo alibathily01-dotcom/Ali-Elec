@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demande de devis - Électricien</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Demande de devis</h1>
+    <form action="https://formsubmit.co/hashdiop97@gmail.com" method="POST" enctype="multipart/form-data">
+      
+      <!-- Redirection et configuration -->
+      <input type="hidden" name="_next" value="https://tonsite.com/merci.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Informations personnelles -->
+      <label for="nom">Nom complet</label>
+      <input type="text" id="nom" name="Nom" required>
+
+      <label for="email">Adresse email</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="telephone">Téléphone</label>
+      <input type="tel" id="telephone" name="Téléphone">
+
+      <label for="adresse">Adresse du chantier</label>
+      <input type="text" id="adresse" name="Adresse">
+
+      <!-- Informations sur le bâtiment -->
+      <label for="type">Type de bâtiment</label>
+      <select id="type" name="Type de bâtiment" required>
+        <option value="">-- Sélectionner --</option>
+        <option value="Maison individuelle">Maison individuelle</option>
+        <option value="Appartement">Appartement</option>
+        <option value="Immeuble">Immeuble</option>
+        <option value="Commerce">Commerce</option>
+        <option value="Bureau">Bureau</option>
+        <option value="Autre">Autre</option>
+      </select>
+
+      <label for="logement">Type de logement (F1, F2, F3...)</label>
+      <select id="logement" name="Type de logement">
+        <option value="">-- Sélectionner --</option>
+        <option value="F1">F1</option>
+        <option value="F2">F2</option>
+        <option value="F3">F3</option>
+        <option value="F4">F4</option>
+        <option value="F5 ou plus">F5 ou plus</option>
+      </select>
+
+      <label for="niveaux">Nombre de niveaux (étages)</label>
+      <input type="number" id="niveaux" name="Nombre de niveaux" min="0">
+
+      <label for="soussol">Présence de sous-sol</label>
+      <select id="soussol" name="Sous-sol">
+        <option value="">-- Sélectionner --</option>
+        <option value="Oui">Oui</option>
+        <option value="Non">Non</option>
+      </select>
+
+      <label for="pieces">Nombre de pièces</label>
+      <input type="number" id="pieces" name="Nombre de pièces" min="1">
+
+      <label for="superficie">Superficie approximative (m²)</label>
+      <input type="number" id="superficie" name="Superficie" min="1">
+
+      <label for="etat">État actuel du bâtiment</label>
+      <select id="etat" name="État du bâtiment">
+        <option value="">-- Sélectionner --</option>
+        <option value="Neuf">Neuf</option>
+        <option value="Rénovation">Rénovation</option>
+        <option value="En construction">En construction</option>
+      </select>
+
+      <label for="urgence">Le projet est-il urgent ?</label>
+      <select id="urgence" name="Urgence">
+        <option value="">-- Sélectionner --</option>
+        <option value="Oui">Oui</option>
+        <option value="Non">Non</option>
+      </select>
+
+      <label for="plan">Disposez-vous d’un plan ou d’un document technique ?</label>
+      <select id="plan" name="Plan disponible">
+        <option value="">-- Sélectionner --</option>
+        <option value="Oui">Oui</option>
+        <option value="Non">Non</option>
+      </select>
+
+      <!-- Description du projet -->
+      <label for="message">Description du projet</label>
+      <textarea id="message" name="Message" rows="5" required></textarea>
+
+      <!-- Fichier joint -->
+      <label for="fichier">Joindre un plan ou document (PDF, image…)</label>
+      <input type="file" id="fichier" name="Fichier">
+
+      <button type="submit">Envoyer la demande</button>
+    </form>
+  </div>
+</body>
+</html>

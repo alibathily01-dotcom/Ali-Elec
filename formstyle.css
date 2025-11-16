@@ -1,0 +1,108 @@
+/* Base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Titres */
+h2 {
+  color: #0074D9;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 30px;
+  color: #001f3f;
+}
+
+/* Labels et champs */
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0074D9;
+  outline: none;
+}
+
+/* Sections */
+#levelInputs,
+#globalComposition,
+#uploadSection,
+#clientInfo {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 5px solid #0074D9;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Niveaux */
+.level-block {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+/* Boutons */
+button {
+  background-color: #0074D9;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
